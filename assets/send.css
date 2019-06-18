@@ -1,0 +1,117 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #BBBBBB;
+  }
+  
+  
+  
+  @font-face {
+    font-family: "bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("font/bold.woff2") format("woff2"), url("font/bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("font/regular.woff2") format("woff2"), url("font/regular.woff") format("woff");
+  }
+  
+  
+  
+  body {padding: 0; margin: 0; cursor: default; background: #FFFFFF; color: #302C2D; overflow-x: hidden;}
+  
+  * {font-family: 'regular'; font-size: 16px; line-height: 27px; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+  
+  
+  
+  
+  
+  
+  
+  .button__holder {
+    position: relative; margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .button__holder:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .button__holder h2 {
+    margin-right: 1em;
+    text-align: center;
+    color: #8A3B58;
+  }
+  
+  .plus {
+    position: relative; margin-top: -35px;
+    z-index: 1;
+    width: 160px;
+    height: 56px;
+    color: #1a1a1a;
+    background: #FFD58B; padding-top: 2px; outline: none;
+   -webkit-border-radius: 30px 30px 30px 30px; -moz-border-radius: 30px 30px 30px 30px; -khtml-border-radius: 30px 30px 30px 30px; border-radius: 30px 30px 30px 30px;  border: none;
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+    transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+  }
+  .plus:after {
+    content: "вернуться";
+    font-family: 'bold'; font-size: 14px; color: #302C2D;
+  }
+  .plus:hover {cursor: pointer;
+  box-shadow: 0 0 1px 8px rgba(253, 182, 82, 0.4), 0 0 1px 16px rgba(253, 182, 82, 0.1), 0 0 1px 24px rgba(253, 182, 82, 0.1);
+  }
+  
+  
+  
+  
+  
+  
+  /* 1 */
+  .b1 {display: table; padding: 0; width: 100%; height: 100%; background: #FFFFFF url(sent.jpg) no-repeat center; background-size: cover;}
+  .b1 .main {display: table-cell; top: 0; left: 0; padding: 100px; text-align: center; vertical-align: middle;}
+  .b1 .main .flag {width: 71px; height: 70px; margin: 0 auto 30px; background: url(sent.png) no-repeat center;}
+  .b1 .main h1 {font-family: 'bold'; font-weight: normal; font-size: 40px; line-height: 48px; color: #302C2D; margin: 0; padding: 0; margin-bottom: 15px;}
+  
+  
+  
+  @media screen and (max-width: 515px){
+  .b1 .main h1 {font-size: 30px; line-height: 38px;}
+  }
+  @media screen and (max-width: 446px){
+  .b1 .main {padding: 100px 70px;}
+  }
+  @media screen and (max-width: 373px){
+  .b1 .main {padding: 100px 30px;}
+  }
+  
+  
+  
+  
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.01),
+    only screen and (-moz-min-device-pixel-ratio: 1.01),
+    only screen and (-o-min-device-pixel-ratio: 1.01/1),
+    only screen and (min-device-pixel-ratio: 1.01),
+    only screen and (min-resolution: 1.01dppx) {
+  .b1 .main .flag {background: url(sent@1.1.png) no-repeat center; background-size: 71px 70px;}
+    }

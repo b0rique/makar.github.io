@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <script src="./app.js"></script>
+    </head>
+    <body>
+        <div class="counter" id="price">
+            <div class="counter-title">Калькулятор нятяжного потолка JS
+            </div>
+            <div class="counter-block">
+                <div class="counter-block-option">Количество людей</div>
+                <input type="number" min="1" step="1" class="counter-block-input">
+            </div>
+            <div class="counter-block">
+                <div class="counter-block-option">На сколько дней</div>
+                <input type="number" min="1" step="1" class="counter-block-input">
+            </div>
+            <div class="counter-block">
+                <div class="counter-block-option">Выберете базу</div>
+                <select name="place" id="select">
+                    <option id="mumbai" value="1">Индия, Мумбай</option>
+                    <option id="kerala" value="1.5">Индия, Керала</option>
+                    <option id="varanasi" value="1.8">Индия, Варанаси</option>
+                </select>
+            </div>
+            <div class="counter-total">
+                Общая сумма<br>
+                <span id="total">20456</span>
+            </div>
+        </div>
+    </body>
+</html>
